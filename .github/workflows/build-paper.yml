@@ -4,12 +4,17 @@ on:
   push:
     paths:
       - "paper/**"
+      - "!paper/thorp_subquadratic_mixing.pdf"
       - ".github/workflows/build-paper.yml"
   pull_request:
     paths:
       - "paper/**"
+      - "!paper/thorp_subquadratic_mixing.pdf"
       - ".github/workflows/build-paper.yml"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -20,6 +25,17 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: paper/main.tex
+      - name: Store compiled PDF in repository
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          cp main.pdf paper/thorp_subquadratic_mixing.pdf
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add paper/thorp_subquadratic_mixing.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Build compiled paper PDF"
+            git push
+          fi
       - name: Upload compiled PDF
         uses: actions/upload-artifact@v4
         with:
