@@ -24,4 +24,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: thorp-subquadratic-mixing-paper
-          path: paper/main.pdf
+          path: main.pdf
