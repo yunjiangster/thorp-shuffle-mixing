@@ -6,6 +6,7 @@ Makefile
 FILES.txt
 requirements.txt
 paper/main.tex
+paper/thorp_subquadratic_mixing.pdf
 checks/verify_audit.py
 checks/audit_results.json
 checks/run.log
