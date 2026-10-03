@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite this manuscript."
+title: "A subquadratic upper bound for the mixing time of the Thorp shuffle"
+type: article
+authors:
+  - family-names: Jiang
+    given-names: Yunjiang
+year: 2026
