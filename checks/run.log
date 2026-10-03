@@ -1,0 +1,11 @@
+Running exact_geometry
+exact_geometry PASS
+Running exact_representation
+exact_representation PASS
+Running floating_scalar_and_entropy
+floating_scalar_and_entropy PASS
+Running floating_parameters
+floating_parameters PASS
+
+Full machine-readable output is stored in checks/audit_results.json.
+Recorded status: PASS
