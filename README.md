@@ -18,11 +18,10 @@ Time is counted in individual Thorp shuffles (equivalently, one hypercube sweep 
 
 ## What is in this repository
 
-- `paper/main.tex` — self-contained LaTeX source.
-- `paper/thorp_subquadratic_mixing.pdf` — compiled manuscript.
+- `paper/main.tex` — self-contained LaTeX source; it is compiled automatically by GitHub Actions, the workflow publishes the PDF as a downloadable build artifact.
 - `checks/verify_audit.py` — independent finite-case and numerical audit checks used during proof development.
 - `checks/audit_results.json` — machine-readable audit results.
-- `checks/run.log` — recorded verifier output.
+- `checks/run.log` — recorded verifier status summary.
 - `notes/SUBMISSION_NOTES.md` — arXiv/submission notes.
 - `notes/REVISION_NOTES.md` — exposition and revision history for the final draft.
 - `notes/PROVENANCE.json` — provenance metadata for the proof-audit bundle.
@@ -52,7 +51,7 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
-No external figures, bibliography database, or data files are required.
+No external figures, bibliography database, or data files are required. The repository's GitHub Actions workflow also performs this build and uploads `paper/main.pdf` as an artifact.
 
 ## Reproducing the audit checks
 
