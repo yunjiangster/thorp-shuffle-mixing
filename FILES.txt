@@ -1,0 +1,14 @@
+README.md
+CITATION.cff
+.gitattributes
+.gitignore
+Makefile
+FILES.txt
+paper/main.tex
+checks/verify_audit.py
+checks/audit_results.json
+checks/run.log
+notes/PROVENANCE.json
+notes/REVISION_NOTES.md
+notes/SUBMISSION_NOTES.md
+.github/workflows/build-paper.yml
