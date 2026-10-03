@@ -4,6 +4,7 @@ CITATION.cff
 .gitignore
 Makefile
 FILES.txt
+requirements.txt
 paper/main.tex
 checks/verify_audit.py
 checks/audit_results.json
@@ -12,3 +13,4 @@ notes/PROVENANCE.json
 notes/REVISION_NOTES.md
 notes/SUBMISSION_NOTES.md
 .github/workflows/build-paper.yml
+.github/workflows/audit.yml
