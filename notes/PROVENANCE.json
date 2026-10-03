@@ -1,0 +1,32 @@
+{
+  "research_date": "2026-10-02",
+  "share_url": "https://chatgpt.com/share/6ac097e7-6904-83e8-9058-ea6b22f746a9",
+  "share_retrieval": "title only; no readable proof transcript",
+  "audited_source": "actual recovered V3 manuscript",
+  "sources": [
+    {
+      "file_name": "THORP_V3_TUPLE_MULTIPLICITY_SUBQUADRATIC_2026-10-02.tex",
+      "library_file_id": "file_00000000eca481fdaefbd21955ce511b",
+      "version_id": 1,
+      "path": "source/THORP_V3_TUPLE_MULTIPLICITY_SUBQUADRATIC_2026-10-02.tex",
+      "bytes": 54015,
+      "sha256": "a2fbe6051a1fd8073ee84fe0ea58b4bc5afd287dc76245a6fa934df63334c6e4"
+    },
+    {
+      "file_name": "THORP_V3_TUPLE_MULTIPLICITY_SUBQUADRATIC_2026-10-02.pdf",
+      "library_file_id": "file_00000000014c81fd8f6f303c39255cca",
+      "version_id": 1,
+      "path": "source/THORP_V3_TUPLE_MULTIPLICITY_SUBQUADRATIC_2026-10-02.pdf",
+      "bytes": 433696,
+      "sha256": "44447c76c5fc3948878f51a2ec4e57a86869f645a6d345609ec3724bcc046536"
+    },
+    {
+      "file_name": "CHECKPOINT(3).md",
+      "library_file_id": "file_000000009e9881fd951e8ed36329d39d",
+      "version_id": 1,
+      "path": "source/CHECKPOINT(3).md",
+      "bytes": 11232,
+      "sha256": "bc915cf1b07bfa96d839497e11a7137fb16c4ada371c19ee836581761aa130af"
+    }
+  ]
+}
