@@ -1,0 +1,27 @@
+name: Build paper
+
+on:
+  push:
+    paths:
+      - "paper/**"
+      - ".github/workflows/build-paper.yml"
+  pull_request:
+    paths:
+      - "paper/**"
+      - ".github/workflows/build-paper.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: paper/main.tex
+      - name: Upload compiled PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: thorp-subquadratic-mixing-paper
+          path: paper/main.pdf
